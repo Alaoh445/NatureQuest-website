@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push left and right sides apart */
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; /* Space between logo/title and links */
+    margin-left: 80px;  /* Add this line to move logo/title toward center */
+    font-size: 20px;
+}
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+.navbar a {
+    margin: 0 15px;
+    text-align: right;
+}
+a:hover {
+    text-decoration: none;
+    color: palevioletred;
+}
+h1 {
+    color: white;
+    text-align: left;
+}
+main {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpcnN0JTIwY29udGFjdHxlbnwwfHx8fDE2OTI3NzE5NTg&ixlib=rb-4.0.3&q=80&w=1080');/* Space for fixed header */
+    background-size: cover;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.center1 {
+    margin-top: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 120px;
+}
+.center a {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.center a:hover {
+    border: 1px solid white;
+    background-color: white;
+    transition: none;
+    color: black;
+    text-decoration: none;
+}
+.welcome {
+    padding: 80px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.video {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.Deep {
+    text-align: center;
+    color: black;
+    margin: 0px;
+    padding: 20px 20px;
+    margin-top: 80px; 
+}
+.Deeper {
+    padding: 5px;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: contain;
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 20px;
+}
+i {
+    color: white;
+    font-size: 60px;
+}
+.popular1 {
+    text-align: center;
+    margin: 0px;
+    padding: 20px 20px;
+    margin-top: 100px; 
+    color: white;
+}
+.group-popular {
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; 
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.popular2 {
+    position: relative;
+    width: 540px;      
+    height: 410px;     
+    margin: 10px;
+    overflow: hidden;
+}
+.popular2 img {
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+.filling-fast {
+  position: absolute;
+    top: 12px;
+    right: 25px;
+    background: palevioletred;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    pointer-events: none; /* So clicks go to the image/link if needed */
+}
+.inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #1e1f1f;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;   /* Add scroll if content is too much */
+    z-index: 2;
+    max-height: 100%;  /* Prevent overflow outside the image */
+}
+.confirmed {
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    background: green;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    pointer-events: none; /* So clicks go to the image/link if needed */
+}
+.one {
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    background: green;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    pointer-events: none; /* So clicks go to the image/link if needed */
+}
+.inner .outlander {
+    font-size: 15px;
+    font-weight: bold;
+}
+ .inner .date {     
+    font-size: 12px;
+    margin-bottom: 6px;
+    font-weight: lighter;
+}
+.inner .creator {           
+    font-size: 15px;
+    font-style: italic;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 3px 3px;
+}
+.inner .cultural {
+    font-size: 10px;
+}
+.popular2 a img {
+    transition: transform 0.1s ease, border 0.1s ease;
+    
+}
+
+.group-popular a:hover img,
+.group-popular a:focus img {
+    transform: scale(1.2);
+     border: 5px solid palevioletred;
+    cursor: pointer;
+}
+.Trips {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;    
+    color: white;  
+    margin-left: 200px;    
+    margin-right: 200px;  
+}
+.Trips a {
+    padding: 15px 15px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+}
+.Trips a:hover {
+    background-color: white;
+    transition: none;
+    color: palevioletred;
+    text-decoration: none;
+}
+.Hear1 {
+    padding: 5px;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: space-evenly;    
+    color: white;        
+}
+.Hear2 {
+    padding: 20px 20px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    object-fit: contain;
+}
+.review {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.morereviews {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+.morereviews a {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white; /* Add this line for white border */
+}
+.morereviews a:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    transition: none;
+    color: black;
+    text-decoration: none;
+}
+.stars {
+    text-align: left;
+    color: palevioletred;
+    font-size: 14px; /* Make the stars small */
+}
+.image {
+    width: 450px;
+    height: 700px;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    float: left;
+    object-fit: cover;
+}
+.Host {
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.Become {
+    padding: 20px 20px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 600px;
+}
+.Become a {
+    padding: 10px 10px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px; 
+    text-decoration: none;
+}
+.Become a:hover {
+    border: 1px solid white;
+    background-color: white;
+    transition: none;
+    color: palevioletred;
+}
+.image1 {
+    width: 450px;
+    height: 700px;
+    border-radius: 5px;
+    margin-right: 150px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    float: right;
+    object-fit: cover;
+}
+.About2 {
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.About3 {
+     padding: 20px 20px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.About3 a {
+     padding: 10px 10px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px; 
+    text-decoration: none;
+}
+.About3 a:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 10px palevioletred;
+    background-color: white;
+    transition: none;
+    color: palevioletred;
+}
+.Best1 {
+    text-align: center;
+    margin-top: 250px;   
+    color: white; 
+    font-size: 20px;       
+}
+.Best2 {
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;    
+}
+.Best2 .blog-image {
+    border: 20px;
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    object-fit: cover;
+    justify-content: space-evenly;
+}
+.blog1 {
+    padding: 10px;
+}
+/* Add this to your style.css */
+.Hover1 .blog-image {
+    transition: transform 0s ease;
+}
+
+.Hover1:hover .blog-image {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.Read {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px; 
+    text-decoration: none;
+    border: 2px solid white; /* Add this line for white border */
+}
+.Read:hover {
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    transition: none;
+    color: black;
+}
+.news {
+    width: 550px;
+    height: 500px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    float: right;
+    object-fit: cover;
+    object-position: 70% 100%;
+}
+.Newsletter2 {
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.subscribe-form {
+    padding: auto;
+    margin-top: 20px;
+}
+.button {
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    box-shadow: 0 0 10px palevioletred;
+    transition: none;
+}
+.instagram-images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;           /* Change from 100vw to 100% */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: clip;      /* Prevents scroll */
+    margin-bottom: 150px;
+    gap: 5px;
+}
+
+.instagram-image {
+    flex: 1 1 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: block;
+    min-width: 0;          /* Prevents overflow from images */
+}
+.instagram-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.nature {
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+ .nature1:hover {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: palevioletred;
+}
+.faq {
+    color: white;
+}
+.faq {
+    display: flex;
+    justify-content: center;      /* Center the FAQ items horizontally */
+    align-items: flex-start;      /* Align items to the top */
+    gap: 10px;                    /* Equal space between each faq1 */
+    color: white;
+    margin: 60px 0;   
+    font-size: 15px;            /* Optional: add vertical spacing */
+}
+
+.faq1 {
+    width: 200px;                 /* Set a fixed or max width for each item */
+    padding: 1px;          /* Optional: add background for visibility */
+    border-radius: 8px;           /* Optional: rounded corners */
+    box-sizing: border-box;
+    text-align: center;
+}
+.faq1 a:hover {     /* Change background on hover */
+    color: palevioletred;         /* Change text color on hover */
+    cursor: pointer;  
+    text-decoration: underline;            /* Change cursor to pointer */
+}
+.footer-content {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center;            /* Center items vertically */
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    width: 100%;
+}
+.follow i {
+    font-size: 30px; /* Adjust icon size */
+    color: white; /* Icon color */
+}
+.follow i:hover {
+    color: palevioletred; /* Change icon color on hover */
+}
